@@ -9,6 +9,30 @@ package sistem.informasi_data_pasien_inap_di_rumah_sakit;
  *
  * @author Kukuh Sanddi
  */
-public class Pasien {
+public class Pasien extends Orang{
+    private int lvPasien;
+
+    public int getLvPasien() {
+        return lvPasien;
+    }
+
+    public void setLvPasien(int lvPasien) {
+        this.lvPasien = lvPasien;
+    }
     
+    public String gelar {
+        if (lvPasien == 1){
+            return "Tuan "+o.getnama();
+        }
+        else if (lvPasien == 2){
+            return "Nyonya "+o.getnama();
+        }
+        else if (lvPasien == 3){
+            return "Nona "+o.getnama();
+        }
+        return "(tidak teridentifikasi)";
+        
+    }
+}
+
 }

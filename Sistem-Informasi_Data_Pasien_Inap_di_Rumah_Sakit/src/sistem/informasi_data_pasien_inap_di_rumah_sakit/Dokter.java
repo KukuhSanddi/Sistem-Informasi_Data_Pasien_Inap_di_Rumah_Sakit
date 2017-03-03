@@ -13,5 +13,8 @@ public class Dokter extends Orang{
     protected long nip;
     protected String spesialis;
     
-    
+    public String gelar{
+        return "dr. "+o.getnama;
+    }
 }
+

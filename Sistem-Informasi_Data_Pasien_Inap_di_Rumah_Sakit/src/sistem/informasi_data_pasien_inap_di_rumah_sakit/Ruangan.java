@@ -10,5 +10,8 @@ package sistem.informasi_data_pasien_inap_di_rumah_sakit;
  * @author Kukuh Sanddi
  */
 public class Ruangan {
+    private PasienInap[] daftarPasien;
+    private String jenisRuangan;
     
+    public void tambahPasienInap (Pasien p, Dokter d);
 }
